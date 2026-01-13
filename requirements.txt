@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+sqlalchemy
+opencv-python
+face_recognition
+python-multipart
+pytest
+pytest-cov
