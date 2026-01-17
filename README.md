@@ -1,6 +1,5 @@
 # Attendance Tracker
 
-AI-powered attendance system using facial recognition.
-
-## Vision
-Automatic student tracking via IP cameras.
+## Setup
+1. `pip install -r requirements.txt`
+2. `uvicorn main:app --reload`
