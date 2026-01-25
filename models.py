@@ -14,5 +14,5 @@ class AttendanceLog(Base):
     __tablename__ = 'attendance_logs'
     id = Column(Integer, primary_key=True, index=True)
     student_id = Column(Integer, ForeignKey('students.id'))
-    timestamp = Column(DateTime, default=datetime.utcnow)
+    timestamp = Column(DateTime, default=datetime.utcnow, index=True)
     student = relationship('Student', back_populates='logs')
