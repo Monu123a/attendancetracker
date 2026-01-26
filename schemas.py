@@ -1,5 +1,4 @@
 from pydantic import BaseModel
-import datetime
 
 class StudentBase(BaseModel):
     name: str
@@ -8,14 +7,7 @@ class StudentBase(BaseModel):
 class StudentCreate(StudentBase):
     pass
 
-class StudentResponse(StudentBase):
+class Student(StudentBase):
     id: int
-    class Config:
-        orm_mode = True
-
-class LogResponse(BaseModel):
-    id: int
-    student_id: int
-    timestamp: datetime.datetime
     class Config:
         orm_mode = True
