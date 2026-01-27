@@ -10,3 +10,10 @@ def create_student(db: Session, student: schemas.StudentCreate):
     db.commit()
     db.refresh(db_student)
     return db_student
+
+def log_attendance(db: Session, student_id: int):
+    db_log = models.AttendanceLog(student_id=student_id)
+    db.add(db_log)
+    db.commit()
+    db.refresh(db_log)
+    return db_log
