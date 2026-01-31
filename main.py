@@ -1,7 +1,5 @@
-from fastapi import FastAPI, Depends, UploadFile, File
-import crud, schemas, ai_service
 ...
-@app.post('/register')
-async def register_student(name: str, student_id: str, file: UploadFile = File(...), db: Session = Depends(get_db)):
-    # Registration logic
+@app.post('/capture')
+async def capture_attendance(file: UploadFile = File(...), db: Session = Depends(get_db)):
+    # Capture and match logic
     pass
