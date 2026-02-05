@@ -1,1 +1,1 @@
-# Applying CLAHE for better face detection
+# Fix for numpy array serialization
